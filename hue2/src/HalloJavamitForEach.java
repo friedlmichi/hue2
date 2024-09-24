@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class HalloJavamitForEach {
     static List<String> list = new ArrayList<>();
@@ -11,6 +12,7 @@ public class HalloJavamitForEach {
         //list.forEach((String s) -> System.out.println(s));
         list.forEach(System.out::println);
 
+        Consumer<String> consumer = System.out::println;
 
 
     }
