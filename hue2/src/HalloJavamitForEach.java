@@ -8,5 +8,8 @@ public class HalloJavamitForEach {
         for (String s : list) {
             System.out.println(s);
         }
+
+
+        list.forEach(s -> System.out.println(s));
     }
 }
