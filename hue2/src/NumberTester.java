@@ -1,5 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-    public class NumberTester {
+public class NumberTester {
         private NumberTest oddTester;
         private NumberTest primeTester;
         private NumberTest palindromeTester;
@@ -37,8 +40,28 @@
             });
         }
 
-        public void testFile() {
-            // TODO
+        public void testFile() throws IOException {
+            BufferedReader reader = new BufferedReader(new FileReader("numbers.txt"));
+            int n = Integer.parseInt(reader.readLine());
+
+            for (int i = 0; i < n; i++) {
+                String[] parts = reader.readLine().split(" ");
+                int testType = Integer.parseInt(parts[0]);
+                int number = Integer.parseInt(parts[1]);
+
+                switch (testType) {
+                    case 1:
+                        System.out.println(oddTester.testNumber(number) ? "EVEN" : "ODD");
+                        break;
+                    case 2:
+                        System.out.println(primeTester.testNumber(number) ? "PRIME" : "NO PRIME");
+                        break;
+                    case 3:
+                        System.out.println(palindromeTester.testNumber(number) ? "PALINDROME" : "NO PALINDROME");
+                        break;
+                }
+            }
+            reader.close();
         }
     }
 
