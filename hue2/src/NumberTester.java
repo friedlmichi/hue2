@@ -20,6 +20,23 @@
             this.palindromeTester = palindromeTester;
         }
 
+        public static void main(String[] args) {
+            NumberTester tester = new NumberTester("numbers.txt");
+
+            tester.setOddEvenTester(n -> n % 2 == 0);
+            tester.setPrimeTester(n -> {
+                if (n < 2) return false;
+                for (int i = 2; i <= Math.sqrt(n); i++) {
+                    if (n % i == 0) return false;
+                }
+                return true;
+            });
+            tester.setPalindromeTester(n -> {
+                String s = Integer.toString(n);
+                return s.equals(new StringBuilder(s).reverse().toString());
+            });
+        }
+
         public void testFile() {
             // TODO
         }
