@@ -6,7 +6,7 @@ public class CalculatorApp {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Choose calculator:");
+            System.out.println("Auswahl der calculator:");
             System.out.println("1 = Rational calculator");
             System.out.println("2 = Vector calculator");
             System.out.println("3 = Complex calculator");
@@ -43,23 +43,23 @@ public class CalculatorApp {
                     break;
             }
 
-            System.out.println("Enter number x a> ");
+            System.out.println("Eingabe number x a> ");
             double a = scanner.nextDouble();
-            System.out.println("Enter number x b> ");
+            System.out.println("Eingabe number x b> ");
             double b = scanner.nextDouble();
-            System.out.println("Enter number y a> ");
+            System.out.println("Eingabe number y a> ");
             double c = scanner.nextDouble();
-            System.out.println("Enter number y b> ");
+            System.out.println("Eingabe number y b> ");
             double d = scanner.nextDouble();
 
             Number x = new Number(a, b);
             Number y = new Number(c, d);
 
-            System.out.println("Choose operation:");
-            System.out.println("1 = add");
-            System.out.println("2 = subtract");
-            System.out.println("3 = multiply");
-            System.out.println("4 = divide");
+            System.out.println("Rechenschritt auswählen:");
+            System.out.println("1 = addieren");
+            System.out.println("2 = subtrahieren");
+            System.out.println("3 = multiplizieren");
+            System.out.println("4 = dividieren");
             int operation = scanner.nextInt();
 
             Number result = null;
@@ -79,7 +79,7 @@ public class CalculatorApp {
             }
 
             System.out.println("=========================");
-            System.out.println("Solution: a = " + result.getA() + " b = " + result.getB());
+            System.out.println("Lösung: a = " + result.getA() + " b = " + result.getB());
             System.out.println("=========================");
         }
 
