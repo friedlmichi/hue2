@@ -1,3 +1,11 @@
+package htlgkr.friedlm.hue2.app;
+
+import htlgkr.friedlm.hue2.model.Number;
+import htlgkr.friedlm.hue2.calculators.AbstractCalculator;
+import htlgkr.friedlm.hue2.calculators.ComplexCalculator;
+import htlgkr.friedlm.hue2.calculators.RationalCalculator;
+import htlgkr.friedlm.hue2.calculators.VectorCalculator;
+
 import java.util.Scanner;
 
 public class CalculatorApp {

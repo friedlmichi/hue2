@@ -1,3 +1,5 @@
+package htlgkr.friedlm.hue2.testmethods;
+
 import java.util.Arrays;
 import java.util.List;
 

@@ -1,3 +1,5 @@
+package htlgkr.friedlm.hue2.model;
+
 public class Number {
     private double a;
     private double b;

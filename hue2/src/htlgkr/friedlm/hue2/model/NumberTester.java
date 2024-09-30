@@ -1,3 +1,7 @@
+package htlgkr.friedlm.hue2.model;
+
+import htlgkr.friedlm.hue2.interfaces.NumberTest;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +12,6 @@ public class NumberTester {
         private NumberTest palindromeTester;
 
         public NumberTester(String fileName) {
-            // TODO
         }
 
         public void setOddEvenTester(NumberTest oddTester) {
