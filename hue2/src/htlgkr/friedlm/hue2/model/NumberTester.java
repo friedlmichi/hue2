@@ -32,7 +32,7 @@ public class NumberTester {
             tester.setOddEvenTester(n -> n % 2 == 0);
             tester.setPrimeTester(n -> {
                 if (n < 2) return false;
-                for (int i = 2; i <= Math.sqrt(n); i++) {
+                for (int i = 2; i <= Math.sqrt(n); i++) {// sqrt = square root
                     if (n % i == 0) return false;
                 }
                 return true;
@@ -54,13 +54,25 @@ public class NumberTester {
 
                 switch (testType) {
                     case 1:
-                        System.out.println(oddTester.testNumber(number) ? "EVEN" : "ODD");
+                        if (oddTester.testNumber(number)) {
+                            System.out.println("EVEN");
+                        } else {
+                            System.out.println("ODD");
+                        }
                         break;
                     case 2:
-                        System.out.println(primeTester.testNumber(number) ? "PRIME" : "NO PRIME");
+                        if (primeTester.testNumber(number)) {
+                            System.out.println("PRIME");
+                        } else {
+                            System.out.println("NO PRIME");
+                        }
                         break;
                     case 3:
-                        System.out.println(palindromeTester.testNumber(number) ? "PALINDROME" : "NO PALINDROME");
+                        if (palindromeTester.testNumber(number)) {
+                            System.out.println("PALINDROME");
+                        } else {
+                            System.out.println("NO PALINDROME");
+                        }
                         break;
                 }
             }
