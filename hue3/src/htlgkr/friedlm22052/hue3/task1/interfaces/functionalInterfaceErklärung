@@ -1,0 +1,29 @@
+
+funktionales interface in java
+
+- ein funktionales interface hat genau eine abstrakte methode
+- es kann zusätzliche standard- oder statische methoden haben
+- dient dazu, eine funktion oder verhalten als argument zu übergeben
+
+was es kann:
+- ermöglicht lambda-ausdrücke, also kompakte und lesbare methoden
+- vereinfacht den code, da keine anonyme innere klasse nötig ist
+- hilft funktionen als parameter zu verwenden
+
+beispiel:
+- interface:
+```java
+@FunctionalInterface
+public interface Printable {
+    void print(List<Weapon> weapons);
+}
+```
+- verwendung:
+```java
+Printable printable = weaponsList -> weaponsList.forEach(System.out::println);
+printable.print(weapons);
+```
+
+zusammenfassung:
+- funktionale interfaces vereinfachen den code und machen ihn lesbarer
+- wichtig für die verwendung von lambda-ausdrücken

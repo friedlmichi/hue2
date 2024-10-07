@@ -1,0 +1,59 @@
+- findweaponwithlowestdamage
+  - lambda: Comparator.comparingInt(Weapon::getDamage)
+    - vergleicht waffen basierend auf ihrem schaden
+  - function: min()
+    - gibt die waffe mit dem niedrigsten schaden zurück
+
+- findweaponwithhigheststrength
+  - lambda: Comparator.comparingInt(Weapon::getStrength)
+    - vergleicht waffen basierend auf ihrer stärke
+  - function: max()
+    - gibt die waffe mit der höchsten stärke zurück
+
+- findmissileweapons
+  - lambda: w -> w.getDamageType() == DamageType.MISSILE
+    - filtert waffen, die den damage type missile haben
+  - function: filter()
+    - gibt eine liste der waffen zurück, die missile sind
+
+- findweaponwithlongestname
+  - lambda: w -> w.getName().length()
+    - vergleicht die waffen basierend auf der länge ihres namens
+  - function: max()
+    - gibt die waffe mit dem längsten namen zurück
+
+- getweaponnames
+  - lambda: Weapon::getName
+    - ruft den namen jeder waffe ab
+  - function: map()
+    - gibt eine liste von namen aller waffen zurück
+
+- getweaponspeeds
+  - lambda: Weapon::getSpeed
+    - ruft die geschwindigkeit jeder waffe ab
+  - function: mapToInt()
+    - gibt ein array der geschwindigkeiten aller waffen zurück
+
+- sumofvalues
+  - lambda: Weapon::getValue
+    - ruft den wert jeder waffe ab
+  - function: sum()
+    - gibt die summe aller waffenwerte zurück
+
+- sumofhashcodes
+  - lambda: Weapon::hashCode
+    - ruft den hashcode jeder waffe ab
+  - function: sum()
+    - gibt die summe aller hashcodes aller waffen zurück
+
+- removeduplicates
+  - lambda: distinct()
+    - entfernt doppelte waffen aus der liste
+  - function: distinct()
+    - gibt eine liste der einzigartigen waffen zurück
+
+- increasevaluesbytenpercent
+  - lambda: w -> w.setValue((int) (w.getValue() * 1.1))
+    - erhöht den wert jeder waffe um 10%
+  - function: peek()
+    - aktualisiert den waffenwert mit der neuen berechnung
