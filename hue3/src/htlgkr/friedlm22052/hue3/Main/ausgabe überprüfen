@@ -1,4 +1,4 @@
-C:\Users\user\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\lib\idea_rt.jar=51498:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\user\OneDrive\Dokumente\3KlasseHTL\POS\hue2\hue3\out\production\hue3 htlgkr.friedlm22052.hue3.Main.Main
+C:\Users\user\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\lib\idea_rt.jar=52021:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\user\OneDrive\Dokumente\3KlasseHTL\POS\hue2\hue3\out\production\hue3 htlgkr.friedlm22052.hue3.Main.Main
 Einlesung der Waffen aus der CSV-Datei:
 Weapon{name='Varscona', combatType=MELEE, damageType=SLASHING, damage=11, speed=3, strength=5, value=4250}
 Weapon{name='Tuigan Bow', combatType=RANGED, damageType=MISSILE, damage=1, speed=5, strength=6, value=3500}
@@ -75,27 +75,31 @@ Waffen in tabellarischer Form:
 | Broken Weapon        | NONE         | NONE         | 0      | 0      | 0        | 0        |
 +----------------------+------------+------------+--------+--------+--------+--------+
 
-Durchschnitt der Zufallszahlen: 49.8829
+Durchschnitt der Zufallszahlen: 49.9657
 
 Zufällige Strings in Großbuchstaben:
-PSXNAMVRWJ
-EIUVWMVQOA
-VCMRILZECI
-ATURSLLZET
-FWOPKRRURO
-UMHGHLFXIV
-CKGSDGNSIY
-MVUSYELQIR
-AKYYDNOJJA
-YVEGLARCLD
+WTPAWHJZRN
+CIPGIQCGJE
+MNWHNUGPFB
+JEWYMOHBPE
+DBOJDYFDQW
+XGRFXFBDVA
+MCLBBTVFAJ
+ECEFNIBKUA
+WTGYNBAPFI
+FYIWFQNBFQ
 
 Waffe mit dem geringsten Schaden: Weapon{name='Broken Weapon', combatType=NONE, damageType=NONE, damage=0, speed=0, strength=0, value=0}
+
 Waffe mit der höchsten Stärke: Weapon{name='Crom Faeyr', combatType=MELEE, damageType=BLUNT, damage=16, speed=1, strength=25, value=15500}
+
 Waffen mit DamageType.MISSILE:
 Weapon{name='Heartseeker', combatType=RANGED, damageType=MISSILE, damage=2, speed=4, strength=18, value=7800}
 Weapon{name='Strong Arm', combatType=RANGED, damageType=MISSILE, damage=3, speed=5, strength=19, value=5500}
 Weapon{name='Tuigan Bow', combatType=RANGED, damageType=MISSILE, damage=1, speed=5, strength=6, value=3500}
+
 Waffe mit dem längsten Namen: Weapon{name='The Burning Earth', combatType=MELEE, damageType=SLASHING, damage=12, speed=4, strength=5, value=4750}
+
 Namen aller Waffen:
 Carsomyr
 Daystar
@@ -113,6 +117,47 @@ Strong Arm
 Tuigan Bow
 Boomerang Dagger
 Broken Weapon
+
+Summe der Werte aller Waffen: 97050
+
+Summe der Hash-Codes aller Waffen: -1249394799
+
+Einzigartige Waffen:
+Weapon{name='Carsomyr', combatType=MELEE, damageType=SLASHING, damage=17, speed=5, strength=14, value=20000}
+Weapon{name='Daystar', combatType=MELEE, damageType=SLASHING, damage=12, speed=3, strength=6, value=10000}
+Weapon{name='Kundane', combatType=MELEE, damageType=SLASHING, damage=8, speed=0, strength=5, value=4000}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1250}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1250}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1250}
+Weapon{name='The Burning Earth', combatType=MELEE, damageType=SLASHING, damage=12, speed=4, strength=5, value=4750}
+Weapon{name='Varscona', combatType=MELEE, damageType=SLASHING, damage=11, speed=3, strength=5, value=4250}
+Weapon{name='Crom Faeyr', combatType=MELEE, damageType=BLUNT, damage=16, speed=1, strength=25, value=15500}
+Weapon{name='Flail of Ages', combatType=MELEE, damageType=BLUNT, damage=13, speed=4, strength=13, value=4500}
+Weapon{name='Dagger of Venom', combatType=MELEE, damageType=PIERCING, damage=6, speed=0, strength=3, value=10000}
+Weapon{name='Heartseeker', combatType=RANGED, damageType=MISSILE, damage=2, speed=4, strength=18, value=7800}
+Weapon{name='Strong Arm', combatType=RANGED, damageType=MISSILE, damage=3, speed=5, strength=19, value=5500}
+Weapon{name='Tuigan Bow', combatType=RANGED, damageType=MISSILE, damage=1, speed=5, strength=6, value=3500}
+Weapon{name='Boomerang Dagger', combatType=RANGED, damageType=PIERCING, damage=10, speed=1, strength=3, value=3500}
+Weapon{name='Broken Weapon', combatType=NONE, damageType=NONE, damage=0, speed=0, strength=0, value=0}
+
+Waffen mit um 10% erhöhten Werten:
+Weapon{name='Carsomyr', combatType=MELEE, damageType=SLASHING, damage=17, speed=5, strength=14, value=22000}
+Weapon{name='Daystar', combatType=MELEE, damageType=SLASHING, damage=12, speed=3, strength=6, value=11000}
+Weapon{name='Kundane', combatType=MELEE, damageType=SLASHING, damage=8, speed=0, strength=5, value=4400}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1375}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1375}
+Weapon{name='Long Sword +1', combatType=MELEE, damageType=SLASHING, damage=9, speed=4, strength=6, value=1375}
+Weapon{name='The Burning Earth', combatType=MELEE, damageType=SLASHING, damage=12, speed=4, strength=5, value=5225}
+Weapon{name='Varscona', combatType=MELEE, damageType=SLASHING, damage=11, speed=3, strength=5, value=4675}
+Weapon{name='Crom Faeyr', combatType=MELEE, damageType=BLUNT, damage=16, speed=1, strength=25, value=17050}
+Weapon{name='Flail of Ages', combatType=MELEE, damageType=BLUNT, damage=13, speed=4, strength=13, value=4950}
+Weapon{name='Dagger of Venom', combatType=MELEE, damageType=PIERCING, damage=6, speed=0, strength=3, value=11000}
+Weapon{name='Heartseeker', combatType=RANGED, damageType=MISSILE, damage=2, speed=4, strength=18, value=8580}
+Weapon{name='Strong Arm', combatType=RANGED, damageType=MISSILE, damage=3, speed=5, strength=19, value=6050}
+Weapon{name='Tuigan Bow', combatType=RANGED, damageType=MISSILE, damage=1, speed=5, strength=6, value=3850}
+Weapon{name='Boomerang Dagger', combatType=RANGED, damageType=PIERCING, damage=10, speed=1, strength=3, value=3850}
+Weapon{name='Broken Weapon', combatType=NONE, damageType=NONE, damage=0, speed=0, strength=0, value=0}
+
 Die Summe der quadrierten ungeraden Zahlen von 1 bis 10 ist: 165
 
 Process finished with exit code 0

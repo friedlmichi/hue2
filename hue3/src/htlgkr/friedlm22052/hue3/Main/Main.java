@@ -43,34 +43,34 @@ public class Main {
         System.out.println("\nWaffe mit dem geringsten Schaden: " + lowestDamageWeapon);
 
         Weapon highestStrengthWeapon = WeaponUtils.findWeaponWithHighestStrength(weapons);
-        System.out.println("Waffe mit der höchsten Stärke: " + highestStrengthWeapon);
+        System.out.println("\nWaffe mit der höchsten Stärke: " + highestStrengthWeapon);
 
         List<Weapon> missileWeapons = WeaponUtils.findMissileWeapons(weapons);
-        System.out.println("Waffen mit DamageType.MISSILE:");
+        System.out.println("\nWaffen mit DamageType.MISSILE:");
         missileWeapons.forEach(System.out::println);
 
         Weapon longestNameWeapon = WeaponUtils.findWeaponWithLongestName(weapons);
-        System.out.println("Waffe mit dem längsten Namen: " + longestNameWeapon);
+        System.out.println("\nWaffe mit dem längsten Namen: " + longestNameWeapon);
 
         List<String> weaponNames = WeaponUtils.getWeaponNames(weapons);
-        System.out.println("Namen aller Waffen:");
+        System.out.println("\nNamen aller Waffen:");
         weaponNames.forEach(System.out::println);
 
         int sumOfValues = WeaponUtils.sumOfValues(weapons);
-        System.out.println("Summe der Werte aller Waffen: " + sumOfValues);
+        System.out.println("\nSumme der Werte aller Waffen: " + sumOfValues);
 
         int sumOfHashCodes = WeaponUtils.sumOfHashCodes(weapons);
-        System.out.println("Summe der Hash-Codes aller Waffen: " + sumOfHashCodes);
+        System.out.println("\nSumme der Hash-Codes aller Waffen: " + sumOfHashCodes);
 
         List<Weapon> uniqueWeapons = WeaponUtils.removeDuplicates(weapons);
-        System.out.println("Einzigartige Waffen:");
+        System.out.println("\nEinzigartige Waffen:");
         uniqueWeapons.forEach(System.out::println);
 
         List<Weapon> increasedValueWeapons = WeaponUtils.increaseValuesByTenPercent(weapons);
-        System.out.println("Waffen mit um 10% erhöhten Werten:");
+        System.out.println("\nWaffen mit um 10% erhöhten Werten:");
         increasedValueWeapons.forEach(System.out::println);
 
         int result = OddNumberSquaring.calculateSumOfSquaredOdds();
-        System.out.println("Die Summe der quadrierten ungeraden Zahlen von 1 bis 10 ist: " + result);
+        System.out.println("\nDie Summe der quadrierten ungeraden Zahlen von 1 bis 10 ist: " + result);
     }
 }
